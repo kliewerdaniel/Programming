@@ -1,0 +1,32 @@
+header {
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	background-color: white;
+}
+#header-img {
+	width: 100px;
+	height: auto;
+}
+#content {
+	padding-top: 150px;
+	text-align: center;
+}
+h1 {
+	font-size: 36px;
+	
+}
+#nav-bar {
+	font-size: 36px;
+	
+}
+#video {
+	margin-top: 25px;
+	margin-bottom: 75px;
+}
+#form {
+	margin-bottom: 75px;
+}

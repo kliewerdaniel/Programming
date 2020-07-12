@@ -1,0 +1,79 @@
+body {
+	text-align: center;
+	background-color: hsl(180, 90%, 35%);
+	font-size: 20px;
+}
+#number {
+	margin: 20px 10px 20px 0px;
+	position: relative;
+	right: 20px;
+}
+#number-label {
+	position: relative;
+	right: 20px;
+}
+#dropdown {
+	margin: 10px 0px 20px 0px;
+}
+.indoor-outdoor {
+	margin: 20px 0px 20px 0px;
+}
+.sex {
+	margin: 20px 0px 30px 0px;
+}
+#submit {
+	margin: 20px 0px 0px 0px;
+}
+#textarea {
+	width: 250px;
+	height: 100px;
+}
+#survey-form {
+	background: linear-gradient(90deg, hsl(180, 80%, 35%), #FFCCCC);
+	padding: 25px;
+}
+h1 {
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 100;
+	max-width: 100%;
+	height: auto;
+}
+p {
+	line-height: 45px;
+	color: white;
+	animation-name: change;
+	animation-duration: 4s;
+	animation-timing-function: cubic-bezier(0.3, 0.4, 0.5, 1.6);
+	animation-iteration-count: infinite;
+	background-color: hsl(180, 80%, 25%)
+	
+}
+@keyframes change {
+	0% {
+		color: white;
+	}
+	50% {
+		color: black;
+	}
+	100% {
+		color: white;
+	}
+}
+h1:hover {
+	animation-name: title;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+@keyframes title {
+	100% {
+		color: red;
+		transform: scale(1.5);
+	}
+}
+@media (max-height: 200px) {
+	h1 {
+		color: blue;
+	}
+}

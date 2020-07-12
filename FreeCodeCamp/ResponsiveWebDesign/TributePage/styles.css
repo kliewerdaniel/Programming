@@ -1,0 +1,14 @@
+#image {
+	max-width: 50%;
+	display: block;
+	margin: auto;
+}
+#main {
+	text-align: center;
+	min-width: 960px;
+	background-color: lightgrey;
+}
+h1 {
+	background-color: pink;
+	
+}

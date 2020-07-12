@@ -1,0 +1,31 @@
+#navbar {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: fixed;
+	justify-content: space-around;
+	margin-left: 30px;
+
+}
+#main-doc {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	margin-left: 250px;
+}
+.main-section {
+	margin: 50px 0px 50px 0px;
+}
+header {
+	font-size: 36px;
+}
+.nav-link {
+	margin: 25px 0px 25px 0px;
+	font-size: 20px
+}
+p {
+	width: 75%;
+}
+code {
+	font-size: 20px
+}
