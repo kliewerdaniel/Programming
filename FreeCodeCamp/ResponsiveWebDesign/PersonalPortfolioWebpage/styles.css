@@ -1,0 +1,32 @@
+#navbar {
+	position: fixed;
+	top: 0;
+	height: 15vh;
+	display: grid;
+	grid-template-columns: 33vw 33vw 33vw;
+	align-items: center;
+	text-align: center;
+	font-size: 36px;
+	background-color: white;
+}
+@media (max-height: 100%) 
+	{
+		#welcome-section;
+	}
+#welcome-section {
+	height: 100vh;
+	text-align: center;
+}
+header {
+	height: 15vh;
+}
+#projects {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	text-align: center;
+	margin-bottom: 300px;
+	grid-column-gap: 20px;
+}
+.project-tile {
+	background-color: lightgrey;
+}
