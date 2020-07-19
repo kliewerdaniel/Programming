@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cat Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div id="outside">
+	<form id="survey-form" action="/formpage" method="post">
+		<h1>Cat Survey</h1>
+		<fieldset>
+			<legend>Cat Details</legend>
+			<div>
+				<label id="name-label" for="name">Name:</label>
+				<input type="text" required id="name" name="cat_name" placeholder="Enter cat's name here">
+			</div>
+			<div>
+				<label for="address-label">Address:</label>
+				<input type="Address" id="address" name="Address" placeholder="Enter address here">
+			</div>
+			<div>
+				<label id="email-label" for="Email">Email:</label>
+				<input type="email" required id="email" name="email" placeholder="Enter email here">
+			</div>
+			<div>
+				<label id="number-label" for="phone">Phone Number:</label>
+				<input type="number" id="number" name="user_number" placeholder="Enter phone number" min="1" max="9">
+			</div>
+			<div>
+				<label for="gender">Gender</label>
+				<p>
+					<input type="radio" name="gender" value="male">Male<br>
+					<input type="radio" name="gender" value="female">Female<br>
+				</p>
+			</div>
+			<label for="date-label">Date Adopted</label>
+			<input type="date" name="bday">
+		</fieldset>
+		<fieldset>
+			<label for="personality">Check personalites</label>
+			<p>
+				<input type="checkbox" name="friendly" value="friendly"> Friendly<br>
+				<input type="checkbox" name="skitish" value="skitish"> Skitish<br>
+				<input type="checkbox" name="mellow" value="mellow"> Mellow<br>
+			</p>		
+			</fieldset>
+			<fieldset>
+				<div>
+					<label for="color">Color:</label>
+					<select id="dropdown">
+						<option value="brown">Brown</option>
+						<option value="black">Black</option>
+						<option value="white">White</option>
+						<option value="orange">Orange</option>
+						<option value="mixed">Mixed</option>
+					</select>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Describe your cat</legend>
+				<div>
+					<label for="msg"></label>
+					<p>Describe your cat in your own words</p>
+					<textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter text here">
+					</textarea>
+				</div>
+				<p>Upload picture of your cat</p>
+				<button>Attach File</button>
+			</fieldset>
+			<div id="submitbutton">
+				<button type="submit" id="submit">Send your survey</button>
+			</div>
+	</form>
+	</div>
+</body>
+</html>

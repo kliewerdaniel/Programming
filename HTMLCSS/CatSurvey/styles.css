@@ -1,0 +1,66 @@
+h1 {
+	text-align: center;
+	text-transform: capitalize;
+}
+#outside {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: lightblue;
+}
+form {
+	margin: 0 auto;
+	width: 70%;
+	padding: 1em;
+	border: 1px solid #CCC;
+	border-radius: 1em;
+}
+#survey-form {
+	background-color: white;
+}
+fieldset {
+	border: 1px solid lightgrey;
+	margin: 10px;
+}
+legend {
+	font-weight: 700;
+}
+#number {
+	width:150px;
+}
+div + div {
+	margin-top: 1em;
+}
+label {
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+}
+textarea {
+	font: 1em sans-serif;
+	width: 200px;
+	box-sizing: border-box;
+	border: 1px solid #999;
+	vertical-align: top;
+	height: 5em;
+	resize: vertical;
+}
+input:focus, textarea:focus {
+	border-color: orangered;
+}
+.button {
+	padding-left: 90px;
+}
+button {
+	margin: .5em;
+	font-size: 1em;
+	text-transform: capitalize;
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 5px;
+	border-radius: 2px;
+}
+#submitbutton {
+	display:flex;
+	justify-content: center;
+}
