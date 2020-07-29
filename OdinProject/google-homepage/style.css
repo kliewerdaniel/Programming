@@ -2,7 +2,6 @@ body {
     text-align: center;
 }
 #logo {
-    display: block;
     margin: 200px auto 50px;
 }
 #mag {
@@ -10,7 +9,8 @@ body {
     margin-right: 15px;
 }
 #search {
-    margin: 30px auto 50px;
+    margin: 0 auto 50px;
+    margin-left: -150px;
 }
 #google-search {
     border: transparent;
@@ -32,4 +32,19 @@ body {
 #lucky:hover {
     border: 1px solid grey;
     border-radius: 12%;
+}
+#grid {
+    padding-top: 10px;
+    width: 17px;
+}
+.left {
+    float: left;
+    padding: 10px; 
+}
+.right {
+    float: right;
+    padding: 10px;
+}
+#buttons {
+    margin-left: -130px;
 }
