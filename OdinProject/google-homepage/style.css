@@ -7,6 +7,7 @@ body {
 #mag {
     width: 20px;
     margin-right: 15px;
+    opacity: 60%;
 }
 #search {
     margin: 0 auto 50px;
@@ -34,7 +35,7 @@ body {
     border-radius: 12%;
 }
 #grid {
-    padding-top: 10px;
+    padding-top: 8px;
     width: 17px;
 }
 .left {
@@ -47,4 +48,43 @@ body {
 }
 #buttons {
     margin-left: -130px;
+}
+.links {
+    text-decoration: none;
+    color: grey;
+    font-size: 11px;
+    padding: 0px 10px;
+    font-weight: 200;
+}
+#signin {
+    display: block;
+    background-color: rgb(72, 142, 255);
+    color: white;
+    padding: 6px 13px;
+    border-radius: 10%;
+    font-weight: 600;
+}
+.text {
+    margin-top: 12px;
+}
+.lower {
+    text-decoration: none;
+    color: grey;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 200;
+}
+.lower-left {
+    float: left;
+    padding: 15px;
+}
+.lower-right {
+    float: right;
+    padding: 15px;
+}
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
 }
