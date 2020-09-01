@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;500;600;700;800&family=Petrona:ital,wght@1,700;1,800&display=swap');
+
+body {
+  background: #fff;
+  font-family: georgia, selif;
+}
+
+/* header */
+.head {
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 5px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  left: 10px;
+  position: absolute;
+}
+
+.menu button {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: -3px;
+  color: #333;
+  font-size: 15px;
+  border: none;
+  background: #fff;
+
+}
+
+.menu a, .recirculation h2 {
+  display: block;
+  left: 105px;
+  font-size: 14.25px;
+  letter-spacing: 0.7px;
+  line-height: 20px;
+  padding-top: 5px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Libre Franklin', arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo svg{
+  width: 200px;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: 20px;
+  top: 7px;
+}
+
+.header-right .user {
+  display: none;
+  margin-right: 5px;
+  color: #333;
+  font-size: 25px;
+  border: none;
+  background: #fff;
+}
+
+button{
+  border-radius: 3px;
+  padding: 11px 12px 8px;
+  font-family: 'Libre Franklin', arial, sans-serif;
+  background: rgb(86, 123, 149);
+  border: 1px solid rgb(50, 104, 145);
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-left: 5px;
+}
+
+/* main */
+.wrapper {
+  margin-top: 40px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: #121212;
+  font-family: 'Petrona', georgia;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0 20px 0 1rem;
+  max-width: 600px;
+
+}
+
+.main-photo {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.main-photo > img {
+  width: 100%;
+  height: auto;
+}
+
+figcaption{
+  text-align: left;
+  max-width: 80%;
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+}
+
+.copyright{
+  color: #888;
+}
+
+.author-info {
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: #121212;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+.author-name {
+  font-family: 'Libre Franklin', arial, sans-serif;
+  font-size: 0.9rem;
+  color: #121212;
+  font-weight: 700;
+}
+
+.author-name p {
+  display: inline-block;
+}
+
+.author-name a {
+  text-decoration: none;
+  color: #121212;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.author-info ul, .comment ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding-left: 0;
+}
+
+.author-info time {
+  font-family: 'Libre Franklin', arial, sans-serif;
+  font-weight: 300;
+  padding-left: 0;
+  color: #333;
+  font-size: .8rem;
+}
+
+.sns i {
+  color: #333;
+  margin-right: 10px;
+  font-size: 25px;
+  padding-top: -10px;
+}
+
+.fa-facebook-f, .fa-twitter, .fa-envelope, .fa-share {
+  background: rgba(220, 220, 220, 0.5);
+  border-radius: 50%;
+  height: 23px;
+  width: 28px;
+  text-align: center;
+  padding-top: 6px;
+  font-size: 15px !important;
+}
+
+.fa-commenting-o {
+  margin-top: -7px;
+  margin-left: 10px;
+}
+
+/* articl-body */
+.article-body {
+  display: block;
+}
+
+.story-body {
+  display: flex;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  height: 100%;
+}
+
+
+.content {
+  margin-left: calc((100% - 600px) / 2);
+  margin-right: 0;
+  width: 600px;
+}
+
+.content p {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+.content .la {
+  color: #326891;
+  text-decoration: underline;
+}
+
+.inline-message {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Libre Franklin', arial, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.line-top {
+  border-top: 1px solid rgb(204, 204, 204);
+  width: 72px;
+  margin: 0px auto 18px;
+}
+
+.line-bottom {
+  border-bottom: 1px solid rgb(204, 204, 204);
+  width: 72px;
+  margin: 18px auto 0;
+}
+
+.inline-message ul {
+  list-style: none;
+}
+
+.inline-message .subscribe {
+  color: rgb(50, 104, 145);
+}
+
+/* editors-picks */
+.companion-column {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  margin-left: auto;
+  width: 210px;
+}
+
+.editors-picks {
+  max-width: 210px;
+  width: 100%;
+  display: block;
+  font-family: 'Libre Franklin', arial, sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.editors-picks h2 {
+  border-bottom: 1px solid rgb(226, 226, 226);
+  padding-bottom: 15px;
+}
+
+.editors-picks article {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.picks-img {
+  display: block;
+  width: 75px;
+  margin-right: 5px;
+}
+
+.picks-img img {
+  border: none;
+  height: auto;
+  max-width: 100%;
+}
+
+.editors-picks h3 {
+  width: calc(100% - 85px);
+  margin: auto 0px auto 0px;
+  font-family: georgia, selif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+/* theory of inflation */
+.shell {
+  width: 945px;
+  display: block;
+  margin: auto;
+}
+
+.story-header h1 {
+  font-style: normal;
+  font-size: 1.25rem;
+  font-family: georgia;
+  margin-bottom: -20px;
+  margin-left: 0;
+}
+
+.story-header span {
+  color: #666;
+}
+
+.theory-of-inflation{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.inflation {
+  width: 228px;
+}
+
+.inflation .theory {
+  font-family: 'Libre Franklin', arial, sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.theory span {
+  font-weight: bold;
+  font-size: 11px;
+  margin-right: 10px;
+}
+
+.inflation .image {
+  background-image: url(https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png);
+  background-size: 400%;
+  height: 138px;
+  width: 228px;
+  background-position: 0 0 ;
+}
+
+.infation .image1 {
+  background-position: 0 0;
+}
+
+.inflation .image2 {
+  background-position: 33% 0;
+}
+
+.inflation .image3 {
+  background-position: 66% 0;
+}
+
+.inflation .image4 {
+  background-position: 100% 0;
+}
+
+.inflation .image5 {
+  background-position: 0 65%;
+}
+
+.inflation .image6 {
+  background-position: 33% 65%;
+}
+
+.inflation .image7 {
+  background-position: 66% 65%;
+}
+
+.inflation .image8 {
+  background-position: 100% 65%;
+}
+
+.story-footer {
+  font-family: 'Libre Franklin', arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+
+}
+.story-footer .line {
+  border-top: 1px solid black;
+  width: 50px;
+}
+
+.bisep2 {
+  margin: 0;
+}
+
+.bottom-of-article {
+  font-size: 0.75rem;
+  color: rgb(102, 102, 102);
+  font-family: 'Libre Franklin', arial, sans-serif;
+  margin-bottom: 50px;
+}
+
+.bottom-of-article button {
+  width: 300px;
+}
+
+/* more-space-section */
+.recirculation{
+  display: flex;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 50px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.more-left {
+  width: 80%;
+}
+
+.recirculation h2{
+  text-transform: none;
+}
+
+.space, .picks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.space-photo,.picks-photo {
+  margin: 10px;
+}
+
+.space-photo img, .picks-photo img {
+  width: 100%;
+}
+
+.sp figcaption, .ep figcaption {
+  text-align: left;
+  font-size: 10px;
+  line-height: normal
+}
+
+.sp h3, .ep h3 {
+  padding: 12px;
+  font-weight: normal;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.sp p, .ep p {
+  color: #333;
+  padding: 0 12px;
+  margin-top: 0;
+  font-family: 'Libre Franklin', arial, sans-serif;
+  font-size: 12px;
+}
+
+.space-section {
+  max-width: 852px;
+  display: block;
+  border-top: 1px solid rgb(0, 0, 0);
+}
+
+.more-picks {
+  max-width: 852px;
+  display: block;
+  border-top: 1px solid rgb(0, 0, 0);
+}
+
+.most-popular {
+  width: calc(-38.333px + 33.33vw);
+  max-width: 315px;
+  display: block;
+  margin-left: 30px;
+  border-top: 1px solid rgb(0, 0, 0);
+}
+
+.most-popular h2 {
+  margin-bottom: 22px;
+}
+
+.popular h3 {
+  border-top: 1px solid rgb(226, 226, 226);
+  padding: 15px 0;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* site-index */
+.site-index {
+  padding: 10px 3% 9px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-index::before {
+  background: #fff;
+  display: block;
+  content: '';
+  height: 1px;
+  border-top: 2px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.site-index header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.site-index .go-to {
+  margin: 18px 0px 0px auto;
+  font-size: 11px;
+  font-family: 'Libre Franklin', arial, sans-serif;
+}
+
+.go-to a {
+  color: rgb(86, 123, 149);
+  text-decoration: none;
+}
+
+.site-index-section1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) 1.2fr;
+  font-family: 'Libre Franklin', arial, sans-serif;
+}
+
+.site-index-section1 h3, .site-index-section2 h3 {
+  color: rgb(51, 51, 51);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.site-index-section1 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-index-section1 li {
+  line-height: 16px;
+  height: 23px;
+  font-size: 13px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.sub1 {
+  border-left: 1px solid rgb(226, 226, 226);
+  padding-left: 5px;
+}
+
+.subscribe a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-family: 'Libre Franklin', arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.subscribe svg {
+  width: 13px;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.subscribe .s1 ul {
+  margin-top: 10px;
+}
+
+.subscribe .s1 ul li{
+  font-size: 10px;
+}
+
+.subscribe .s2 ul {
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.site-index-section2 {
+  display: none;
+  font-family: 'Libre Franklin', arial, sans-serif;
+}
+
+.site-index-section2 h3 {
+  border-bottom: 1px solid rgb(226, 226, 226);
+  padding: 12px 0;
+  margin: auto;
+}
+
+/* footer */
+.footer {
+  padding: 0 3% 45px;
+  font-size: 11px;
+  text-align: center;
+  max-width: 1200px;
+  color: #666;
+  font-family: 'Libre Franklin', arial, sans-serif;
+  font-weight: 300;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer span {
+  border-top: 1px solid rgb(226, 226, 226);
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.footer .fl {
+  list-style: none;
+  line-height: 8px;
+  margin: 0 0 35px;
+  padding: 0;
+}
+
+.fl li {
+  display: inline-block;
+  line-height: 20px;
+  padding: 0 10px;
+}
+
+@media (max-width: 1000px) {
+  .header-right .subscribe, .header-right .login {
+    display: none;
+  }
+  .header-right .user {
+    display: inline-block;
+    margin-top: -8px;
+  }
+  .menu .fa-search, .menu a {
+    display: none;
+  }
+  .main-photo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .companion-column {
+    display: none;
+  }
+  .story-body {
+    width: 100%;
+  }
+  .content {
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+  }
+  .shell {
+    display: none;
+  }
+  .space, .picks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sp1, .ep1 {
+    display: none;
+  }
+  .site-index-section1 {
+    display: none;
+  }
+  .site-index-section2 {
+    display: block;
+  }
+  .site-index header {
+    border-bottom: 1px solid rgb(226, 226, 226);
+  }
+  .footer span {
+    border: none;
+  }
+}

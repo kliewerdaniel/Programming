@@ -1,0 +1,375 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+
+html, body {
+    position: relative;
+    z-index: 1;
+    min-width: 1024px;
+    height: 100%;
+}
+body {
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+    color: #333;
+    min-height: 830px;
+    max-height: 1472px;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+.globalheader,
+.globalheader .globalnav,
+.globalheader .globalnav li,
+.globalheader .globalnav li a {
+  height: 36px;
+}
+.globalheader {
+    position: relative;
+    top: 83px;
+    z-index: 9998;
+    display: block;
+    width: 980px;
+    margin: 0 auto;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))), -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))), url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHVQTFRFAAAA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F5YtmQAAAACd0Uk5TAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmZiD6WAAAAdlJREFUeF7t3btuFEEQheFzunotGYkIERA4spn3fyeHiAgEEtsXB82s2eEJavR%2F0Wjyo75XWfHpw4MkSXNqCkA2lr2%2B%2Fvz63n15qpI0x5yTSAM52XaxJLVXf%2FkoaY6xQk2sgXy8Ql2KJf3wS5HG6HMMQg3kZNkuxVGKNLxJo48%2BxhxTpBrIx7JcXEqUKJI3zd77CjWLaiAle4U6Iixv6q33MfocTL%2BBlCy7OEqJqCFvs%2FV2m3%2BTaiAd6zb7rlHtrbc1VA%2Bm30BSa%2B%2B7RNSo4a21thbVTL%2BBnCy7rCV1rdXbtbXW%2B%2Bh%2Ft78BZLM2v6NE1Fov%2FrpC3Zl%2BA2l5H6lrrRe%2FXNu%2BqCbUQE57qGvsoW5t9D4H028gJculOKLUWuvFz%2B16O9NipAZSsm8nWpfq53ZlTQ3k9s%2BamlADZ0CogZMh1MDJEGrgZAg1cDL%2Fh5ojLSC1%2ByMtLp8A2R0un3BNFEjv%2FpooDzqA9O4fdPD0Esju8PSSIglAdsciCZQzArI7lDOat30yCg8CGe2FB1eovZcI7oMSwUBSq0TwWlQHxfyBEzgW86ftDpDase0ODfKA7A4N8mhlC2R318r2px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC') no-repeat 50% 50%, -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px;
+  }
+  .globalheader .globalnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 845px;
+  }
+  .globalnav li {
+    border-right: 1px solid #5c5c5c;
+    width: 100%;
+  }
+  .globalnav li:hover {
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))), -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))), url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHVQTFRFAAAA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F5YtmQAAAACd0Uk5TAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmZiD6WAAAAdlJREFUeF7t3btuFEEQheFzunotGYkIERA4spn3fyeHiAgEEtsXB82s2eEJavR%2F0Wjyo75XWfHpw4MkSXNqCkA2lr2%2B%2Fvz63n15qpI0x5yTSAM52XaxJLVXf%2FkoaY6xQk2sgXy8Ql2KJf3wS5HG6HMMQg3kZNkuxVGKNLxJo48%2BxhxTpBrIx7JcXEqUKJI3zd77CjWLaiAle4U6Iixv6q33MfocTL%2BBlCy7OEqJqCFvs%2FV2m3%2BTaiAd6zb7rlHtrbc1VA%2Bm30BSa%2B%2B7RNSo4a21thbVTL%2BBnCy7rCV1rdXbtbXW%2B%2Bh%2Ft78BZLM2v6NE1Fov%2FrpC3Zl%2BA2l5H6lrrRe%2FXNu%2BqCbUQE57qGvsoW5t9D4H028gJculOKLUWuvFz%2B16O9NipAZSsm8nWpfq53ZlTQ3k9s%2BamlADZ0CogZMh1MDJEGrgZAg1cDL%2Fh5ojLSC1%2ByMtLp8A2R0un3BNFEjv%2FpooDzqA9O4fdPD0Esju8PSSIglAdsciCZQzArI7lDOat30yCg8CGe2FB1eovZcI7oMSwUBSq0TwWlQHxfyBEzgW86ftDpDase0ODfKA7A4N8mhlC2R318r2px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC') no-repeat 50% 50%, -webkit-gradient(linear, 0 100%, 0 0, from(#292929), color-stop(0.5, #5c5c5c), color-stop(0.51, #666), to(#474747));
+  }
+  .globalnav li a {
+    text-indent: -9999px;
+    overflow: hidden;
+    width: auto;
+    outline: none;
+  }
+  .globalnav li a span {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 3px auto;
+    background: url(http://images.apple.com/global/nav/images/globalnav_text.svg);
+  }
+  .globalnav .gn-apple a span {
+    background-position: 50% 0px;
+ }
+ 
+ .globalnav .gn-store a span {
+   background-position: 50% -30px;
+ }
+ 
+ .globalnav .gn-mac a span {
+   background-position: 50% -60px;
+ }
+ 
+ .globalnav .gn-ipod a span {
+   background-position: 50% -90px;
+ }
+ 
+ .globalnav .gn-iphone a span {
+   background-position: 50% -120px;
+ }
+ 
+ .globalnav .gn-ipad a span {
+   background-position: 50% -150px;
+ }
+ 
+ .globalnav .gn-itunes a span {
+   background-position: 50% -180px;
+ }
+ 
+ .globalnav .gn-support a span {
+   background-position: 50% -210px;
+ }
+ .globalheader .globalsearch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 106px;
+    padding: 8px 13px;
+    background: none;
+  }  
+  .globalheader .globalsearch .g-search {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background: url(http://images.apple.com/global/nav/images/globalsearch_field.png) 0 0 no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 2px 1px inset, rgba(255, 255, 255, 0.2) 0 1px 0;
+  }
+  .g-search .sp-label label {
+    display: none;
+  }
+  .sp-label .sp-searchtext {
+    width: 100%;
+    height: 19px;
+    padding: 2px 18px 1px 22px;
+    background: none;
+    border-radius: 12px;
+    border: 0 none;
+    box-sizing: border-box;
+  }
+
+  #billboard {
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 292px;
+    left: 0;
+    overflow: hidden;
+  }
+  
+  #billboard .hero {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: auto;
+    left: 50%;
+    margin-left: -720px;
+    width: 1440px;
+    background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
+    background-size: 1440px 1315px;
+  }
+  a {
+    color: #08c;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  .full {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+  }  
+  #billboard .hero header {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin-top: -170px;
+    padding: 50px 0;
+    background-size: 25px 335px;
+  }
+  
+  #billboard .hero .title {
+    margin-bottom: -9px;
+  }
+  h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
+  h1, h2, h3, h4 {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #billboard .title img,
+  #billboard .subheadline img
+   {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #billboard .hero .subheadline {
+    margin-bottom: 27px;
+    margin-top: -19px;
+  }
+  
+  h2 {
+    font-size: 16px;
+  }
+  
+  h2, h3, h4 {
+    line-height: 18px;
+  }
+  .cta {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    height: 31px;
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  
+  /* aside */
+  aside {
+    display: block;
+  }
+  
+  .promos {
+    position: absolute;
+    z-index: 1;
+    bottom: 90px;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .promos ul {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 0 auto;
+    min-width: 1024px;
+    width: 100%;
+    max-width: 1440px;
+    height: 200px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none outside;
+  }
+  
+  .promos ul li {
+    position: relative;
+    border-left: 2px solid #fff;
+    z-index: 1;
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    width: calc(25% - 1.5px);
+    height: 200px;
+  }
+  
+  .promos ul li:first-child {
+    border-left: none;
+  }
+  
+  .promos ul li a img {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -182px;
+  }
+  
+  /* footer */
+  footer {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    min-width: 980px;
+    width: 100%;
+    height: 90px;
+    padding: 0;
+    color: #6e6e6e;
+    font-size: .8334em;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  footer p, footer ul, footer ul li {
+    display: inline;
+    margin: 0;
+  }
+  
+  footer .wrapper {
+    margin: 0 auto;
+    width: 980px;
+    padding: 1em 0 2.6em;
+  }
+  
+  .wrapper .left {
+    float: left;
+    clear: both;
+    width: 47%;
+    padding-top: 1.5em;
+    text-align: left;
+  }
+  
+  footer .right {
+    float: right;
+    width: 53%;
+    padding-top: 1.5em;
+    margin: 0;
+    text-align: right;
+  }
+  
+  footer .piped li.first {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+  
+  footer .piped li {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    margin-left: .6em;
+    padding-left: .6em;
+    border-left: 1px solid #ccc;
+  }
+  
+  footer .piped a {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  footer .piped .worldwide {
+    position: relative;
+    width: 16px;
+    height: 12px;
+  }
+  
+  footer .piped .worldwide img {
+    position: absolute;
+    top: -2px;
+    left: 7px;
+  }
