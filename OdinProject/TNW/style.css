@@ -1,0 +1,25 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+ul {
+  list-style: none;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#top-head-left, #top-head-right {
+  color: white;
+  background-color: black;
+}
